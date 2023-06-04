@@ -82,6 +82,7 @@ struct Vector : public GenericProvider
         // The quick fix for now is to fill these places with default initialized objects
         const uint64_t capacity = data.size();
         for (uint64_t i{data_size}; i<capacity; ++i) {
+            //把data[i]位置的数据换为默认数据
             new(&data[i]) T();
         }
     }

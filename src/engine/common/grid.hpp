@@ -31,12 +31,12 @@ struct Grid
 	{
 		data.resize(width * height);
 	}
-
+	//保证最终结果在[0, divisor-1] 内
 	int32_t mod(int32_t dividend, int32_t divisor) const
 	{
 		return (dividend%divisor + divisor) % divisor;
 	}
-
+	//保证坐标在width*height内的区域
 	template<typename Vec2Type>
 	bool checkCoords(const Vec2Type& v) const
 	{

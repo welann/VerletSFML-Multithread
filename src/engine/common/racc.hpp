@@ -2,6 +2,7 @@
 #include <vector>
 
 
+//这个文件似乎完全没用到
 template<typename T>
 struct RAccBase
 {

@@ -2,6 +2,7 @@
 #include <random>
 
 
+//产生随机数的
 class NumberGenerator
 {
 protected:
@@ -53,7 +54,7 @@ public:
 	}
 };
 
-
+//random number generator
 template<typename T>
 class RNG
 {
